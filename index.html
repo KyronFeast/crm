@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Simple CRM</a>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Add Client</h2>
+        <form id="addClientForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" name="first_name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" name="last_name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phone_number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" id="address" name="address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="note">Note:</label>
+                <textarea class="form-control" id="note" name="note"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="nextStep">Next Step:</label>
+                <textarea class="form-control" id="nextStep" name="next_step"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="activity">Activity:</label>
+                <textarea class="form-control" id="activity" name="activity"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Client</button>
+        </form>
+
+        <hr>
+
+        <h2>Clients</h2>
+        <div id="clientDetails"></div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Include custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
