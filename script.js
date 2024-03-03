@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() { //wait until the document is ready
     // Submit add client form via AJAX
     $('#addClientForm').submit(function(e) {
         e.preventDefault();

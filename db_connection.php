@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$host = 'localhost';
+$host     = 'localhost';
 $username = 'crm';
 $password = 'crm';
 $database = 'crm';
